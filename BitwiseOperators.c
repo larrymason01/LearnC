@@ -20,5 +20,17 @@ int main() {
     result = a ^ b; // Only ONE MUST be true, both cannot be true
     printf("%d\n", result); // 0011 0001 = 49
 
+    //Ones Complement Operator
+    result = ~a;    // Flips the bits in 2's complement form.
+    printf("%d\n", result); // 1100 0011 = -61
+
+    //Binary Left Shift Operator
+    result = a << 2;    // Value of a is shifted left by 2 bits
+    printf("%d\n", result); // 1111 0000 = 240
+
+    //Binary Right Shift Operator
+    result = a >> 2;    // Value of a is shifted right by 2 bits
+    printf("%d\n", result); // 0000 1111 = 15
+
     return 0;
 }
