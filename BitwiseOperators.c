@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/*
 int main() {
 
     //Bitwise Operators
@@ -34,3 +34,4 @@ int main() {
 
     return 0;
 }
+*/
