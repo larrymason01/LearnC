@@ -15,6 +15,5 @@ int main() {
     int sizeX = sizeof x;   // sizeof returns how many bytes of memory are occupied by a given data type.
     printf("%d bytes\n", sizeX);    // In this case, the data type is int, so sizeof returns 4.
 
-
     return 0;
 }
