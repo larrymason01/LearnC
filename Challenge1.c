@@ -13,10 +13,7 @@ int main() {
     years = minutes / minutesInYear;
     days = (minutes % minutesInYear) / 1440;
 
-    int printYear = (int) years;
-    int printDay = (int) days;
-
-    printf("Years: %d  Days: %d", printYear, printDay);
+    printf("Years: %d  Days: %d", (int) years, (int) days);
 
     return 0;
 }
