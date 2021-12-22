@@ -1,3 +1,4 @@
+/*
 // While and Do-While Loops
 #include "stdio.h"
 
@@ -29,3 +30,4 @@ int main () {
     return 0;
 }
 
+*/
