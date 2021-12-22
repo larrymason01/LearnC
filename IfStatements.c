@@ -1,6 +1,7 @@
 // If Statements
 #include "stdio.h"
 
+
 int main(){
     int score = 95;
     int max = 90;

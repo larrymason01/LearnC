@@ -1,6 +1,7 @@
 //The Cast and sizeof Operators
 #include "stdio.h"
 
+
 int main() {
     // The Cast Operator
     float x = 21.51;

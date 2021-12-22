@@ -78,6 +78,42 @@ build CMakeFiles/LearnCv2.dir/BitwiseOperators.c.o: C_COMPILER__LearnCv2_Debug /
   OBJECT_DIR = CMakeFiles/LearnCv2.dir
   OBJECT_FILE_DIR = CMakeFiles/LearnCv2.dir
 
+build CMakeFiles/LearnCv2.dir/CastAndsizeof.c.o: C_COMPILER__LearnCv2_Debug /Users/larrymason/CLionProjects/LearnCv2/CastAndsizeof.c || cmake_object_order_depends_target_LearnCv2
+  DEP_FILE = CMakeFiles/LearnCv2.dir/CastAndsizeof.c.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=12.0 -std=gnu99
+  OBJECT_DIR = CMakeFiles/LearnCv2.dir
+  OBJECT_FILE_DIR = CMakeFiles/LearnCv2.dir
+
+build CMakeFiles/LearnCv2.dir/OperatorPrecedence.c.o: C_COMPILER__LearnCv2_Debug /Users/larrymason/CLionProjects/LearnCv2/OperatorPrecedence.c || cmake_object_order_depends_target_LearnCv2
+  DEP_FILE = CMakeFiles/LearnCv2.dir/OperatorPrecedence.c.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=12.0 -std=gnu99
+  OBJECT_DIR = CMakeFiles/LearnCv2.dir
+  OBJECT_FILE_DIR = CMakeFiles/LearnCv2.dir
+
+build CMakeFiles/LearnCv2.dir/Challenge1.c.o: C_COMPILER__LearnCv2_Debug /Users/larrymason/CLionProjects/LearnCv2/Challenge1.c || cmake_object_order_depends_target_LearnCv2
+  DEP_FILE = CMakeFiles/LearnCv2.dir/Challenge1.c.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=12.0 -std=gnu99
+  OBJECT_DIR = CMakeFiles/LearnCv2.dir
+  OBJECT_FILE_DIR = CMakeFiles/LearnCv2.dir
+
+build CMakeFiles/LearnCv2.dir/Challenge2.c.o: C_COMPILER__LearnCv2_Debug /Users/larrymason/CLionProjects/LearnCv2/Challenge2.c || cmake_object_order_depends_target_LearnCv2
+  DEP_FILE = CMakeFiles/LearnCv2.dir/Challenge2.c.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=12.0 -std=gnu99
+  OBJECT_DIR = CMakeFiles/LearnCv2.dir
+  OBJECT_FILE_DIR = CMakeFiles/LearnCv2.dir
+
+build CMakeFiles/LearnCv2.dir/IfStatements.c.o: C_COMPILER__LearnCv2_Debug /Users/larrymason/CLionProjects/LearnCv2/IfStatements.c || cmake_object_order_depends_target_LearnCv2
+  DEP_FILE = CMakeFiles/LearnCv2.dir/IfStatements.c.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=12.0 -std=gnu99
+  OBJECT_DIR = CMakeFiles/LearnCv2.dir
+  OBJECT_FILE_DIR = CMakeFiles/LearnCv2.dir
+
+build CMakeFiles/LearnCv2.dir/SwitchStatements.c.o: C_COMPILER__LearnCv2_Debug /Users/larrymason/CLionProjects/LearnCv2/SwitchStatements.c || cmake_object_order_depends_target_LearnCv2
+  DEP_FILE = CMakeFiles/LearnCv2.dir/SwitchStatements.c.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=12.0 -std=gnu99
+  OBJECT_DIR = CMakeFiles/LearnCv2.dir
+  OBJECT_FILE_DIR = CMakeFiles/LearnCv2.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LearnCv2
@@ -86,7 +122,7 @@ build CMakeFiles/LearnCv2.dir/BitwiseOperators.c.o: C_COMPILER__LearnCv2_Debug /
 #############################################
 # Link the executable LearnCv2
 
-build LearnCv2: C_EXECUTABLE_LINKER__LearnCv2_Debug CMakeFiles/LearnCv2.dir/BitwiseOperators.c.o
+build LearnCv2: C_EXECUTABLE_LINKER__LearnCv2_Debug CMakeFiles/LearnCv2.dir/BitwiseOperators.c.o CMakeFiles/LearnCv2.dir/CastAndsizeof.c.o CMakeFiles/LearnCv2.dir/OperatorPrecedence.c.o CMakeFiles/LearnCv2.dir/Challenge1.c.o CMakeFiles/LearnCv2.dir/Challenge2.c.o CMakeFiles/LearnCv2.dir/IfStatements.c.o CMakeFiles/LearnCv2.dir/SwitchStatements.c.o
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=12.0
   OBJECT_DIR = CMakeFiles/LearnCv2.dir
   POST_BUILD = :
