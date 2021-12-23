@@ -26,4 +26,9 @@ int main () {
     printf("Grade average: %0.2f", average);
 
     return 0;
+
+    int arr[5] = {0, 0, 0, 0, 0}; // Initializing an array with values
+
+    float data[10] = {[4] =4.5};    // You can initialize in any order by specifying an element to initialize
 }
+
