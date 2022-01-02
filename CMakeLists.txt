@@ -4,6 +4,6 @@ project(LearnCv2 C)
 set(CMAKE_C_STANDARD 99)
 
 #Change the c file to which file you wish to run
-add_executable(LearnCv2 Challenges/Challenge9.c)
+add_executable(LearnCv2 Structs/CreatingStructs.c)
 
 

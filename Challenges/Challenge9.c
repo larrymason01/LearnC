@@ -19,7 +19,6 @@ int main() {
         printf("You entered: %s", input);
     }
 
-
     free(input);
     input = NULL;
     return 0;
