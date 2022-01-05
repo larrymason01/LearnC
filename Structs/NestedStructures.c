@@ -36,5 +36,16 @@ int main(int argc, char *argv[]) {
     now.stime.hours = 3;
     now.stime.seconds = 45;
 
+    // Nested Struct Arrays
+    struct dateAndTime events[100];
+
+    events[0].stime.hours = 12;
+    events[0].stime.minutes = 0;
+    events[0].stime.seconds = 0;
+
+    events[0].sdate.month = 11;
+    events[0].sdate.day = 1;
+    events[0].sdate.year = 2008;
+
     return 0;
 }
