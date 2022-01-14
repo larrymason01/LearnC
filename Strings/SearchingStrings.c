@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
             ++nDigits;
         else if(ispunct(buf[i]))
             ++nPunct;
-       i++;
+        i++;
     }
 
     printf("Letters: %d\n", nLetters);
