@@ -3,15 +3,15 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-    int numOfLines = 1;
+    int numOfLines = 1; // Need to start at
     FILE *pFile = NULL;
 
     pFile = fopen("challenge13.txt", "r");
 
-    int c;
+    char c;
     while ((c = fgetc(pFile)) != EOF) {
         // ASCII value of '\n' is 10, so if the char read is 10, that means we started a new line
-        if (c == 10)
+        if (c == '\n')
             numOfLines++;
     }
 
