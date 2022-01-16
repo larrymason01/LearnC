@@ -10,14 +10,19 @@ int main(int argc, char *argv[]) {
     char *filename = "test.txt";
     file = fopen(filename, "r");
 
+    // Checking for errors
     if (file == NULL) {
         perror("ERROR OPENING FILE");
         return (-1);
     }
 
-    // Reads a single char until EOF is reached
-    while ((c = fgetc(file)) != EOF) {
-        printf("%c", c);
+    // Reading a string from a file
+    char str[512];  // You must define a string where fgets() will store the data it reads
+
+    if (fgets(str, 128, file) != NULL) {
+        printf("%s", str);
+    } else {
+        printf("ERROR READING STRING FROM FILE");
     }
 
     fclose(file);
