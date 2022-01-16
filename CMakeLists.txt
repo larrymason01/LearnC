@@ -5,6 +5,6 @@ set(CMAKE_C_STANDARD 99)
 set(SOURCE_FILES test.txt)
 
 #Change the c file to which file you wish to run
-add_executable(LearnCv2 FileIO/FilePositioning.c)
+add_executable(LearnCv2 Challenges/Challenge13.c)
 
 
