@@ -81,7 +81,7 @@ int run() {
 
         while (isDrawing) {
             // Gets the user's menu choice, using strtol() to prevent conversion errors
-            printf("Enter a menu choice 1-4:");
+            printf("Enter a menu choice 1-4: ");
             scanf("%s", inBuf);
             printf("\n");
             usrInput = strtol(inBuf, NULL, 10);
@@ -144,14 +144,12 @@ void getCard(struct Player *ply) {
     }
 
 }
-
 void printGameMenu() {
     printf("1. Draw Card\n");
     printf("2. Hold Hand\n");
     printf("3. Print Statistics\n");
     printf("4. Exit Game\n\n");
 }
-
 bool processInput(int usrInput, struct Player *ply, struct Player *dealer) {
     switch (usrInput) {
         case 1: // User wants to draw a card
@@ -174,7 +172,6 @@ bool processInput(int usrInput, struct Player *ply, struct Player *dealer) {
             return false;
     }
 }
-
 void printCardInfo(struct Player *ply, bool isPlayer) {
     if (isPlayer) { // Indicates the player is calling the function
         printf("Your card is a: %s\n", ply->card.name);
@@ -184,7 +181,6 @@ void printCardInfo(struct Player *ply, bool isPlayer) {
         printf("The dealer's hand total is: %d\n\n", ply->handVal);
     }
 }
-
 // This function is used to check the instant win or loss of the player
 bool canContinue(struct Player *ply) {
     int val = ply->handVal;
@@ -195,7 +191,6 @@ bool canContinue(struct Player *ply) {
 
     return true;
 }
-
 void checkWin(struct Player *ply, struct Player *dealer) {
     if (ply->handVal > 21) {
         printf("You lost!\n\n");
