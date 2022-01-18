@@ -28,6 +28,7 @@ void printGameMenu();
 bool processInput(int usrInput, struct Player *ply, struct Player *dealer);
 void printCardInfo(struct Player *ply, bool isPlayer);
 bool canContinue(struct Player *ply);
+void checkWin(struct Player *ply, struct Player *dealer);
 
 // Main function
 int main(int argc, char *arv[]) {
@@ -59,11 +60,15 @@ int run() {
     struct Player *plyPtr = &ply;
     struct Player *dealerPtr = &dealer;
 
-    getCard(plyPtr);
-    getCard(dealerPtr);
-
     // Main while loop
     while(isRunning) {
+
+        plyPtr->handVal = 0;
+        dealerPtr->handVal = 0;
+
+        getCard(plyPtr);
+        getCard(dealerPtr);
+
         printf("Starting Game #%d\n\n", gameNum);
 
         printf("Your card is a %s\n", ply.card.name);
@@ -80,12 +85,20 @@ int run() {
             scanf("%s", inBuf);
             printf("\n");
             usrInput = strtol(inBuf, NULL, 10);
+
+            if (usrInput == 4) {
+                isRunning = false;
+                break;
+            }
+
             //isRunning = processInput(usrInput, plyPtr, dealerPtr);
             isDrawing = processInput(usrInput, plyPtr, dealerPtr);
         }
 
-
-        isRunning = false;
+        if (isRunning) {
+            checkWin(plyPtr, dealerPtr);
+            gameNum++;
+        }
     }
 
     return 0;
@@ -181,4 +194,25 @@ bool canContinue(struct Player *ply) {
     }
 
     return true;
+}
+
+void checkWin(struct Player *ply, struct Player *dealer) {
+    if (ply->handVal > 21) {
+        printf("You lost!\n\n");
+        return;
+    } else if (ply->handVal == 21) {
+        printf("Blackjack! You won!\n\n");
+        return;
+    } else {
+        if (dealer->handVal > 21) {
+            printf("You Win!");
+        } else if (dealer->handVal < 21) {
+            if (dealer->handVal > ply->handVal) {
+                printf("You lost!");
+            } else if (dealer->handVal < ply->handVal) {
+                printf("You win!");
+            }
+
+        }
+    }
 }
